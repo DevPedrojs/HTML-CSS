@@ -44,8 +44,8 @@ header{
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
     margin: 0;
-    padding: 10px;
-    height: 150px;
+    padding-top: 20px ;
+    min-height: 150px;
     
 
     
@@ -58,22 +58,18 @@ header > p{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
     text-align: center;
     margin: auto;
-    
-    
-
-
 }
 
 header > h1 {
     color: white ;
     font-family: var(--fonte-destaque);
-    padding: 10px;
     font-weight: normal;
     font-size: 3em;
-    
+    margin-bottom: 15px;
 }
 
 nav{
+    
     background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.233);
