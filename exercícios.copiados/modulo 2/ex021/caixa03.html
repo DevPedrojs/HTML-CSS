@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            margin: 0; 
+            background-color: #5EAC5A;
+
+        }
+        
+        header{
+            background-color: #266866; 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+        
+        button {
+                  
+            margin: 5px;  
+        } 
+          
+        a{
+            display: none;
+        }
+
+        h1{
+            color: #A8C668;
+            margin: 0;
+            flex-grow: 1; 
+            text-align: center;
+            
+        }
+        button:active{
+            display: flex;
+        }
+         button:active > a{
+            display: block;
+        }
+            
+       nav > a{
+            text-decoration: none;
+            color: white;
+            display: none;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-right: 30px;
+            
+        }
+
+        
+       nav:enabled > a{
+        display: block;
+       }
+
+        footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <header> 
+        <nav>
+            <button>
+            <img src="Icons8-Windows-8-Very-Basic-Menu.48.png" alt="menu-icon">
+            <a href="#">Noticias diarias</a>
+            <a href="#">Contratações</a>
+            <a href="#">Tabela do campeonato</a>
+            <a href="#">Eliminados</a>
+            <a href="#">Apostas</a>
+            </button>
+        </nav>
+        <h1>Meu site</h1>
+    </header>
+    <main>
+        <section id="Assuntos">
+
+        </section>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+
+</body>
+</html>
