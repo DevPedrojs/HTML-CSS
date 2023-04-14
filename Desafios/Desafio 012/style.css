@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 *{
     margin: 0;
     
@@ -10,6 +16,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 
 }
 
@@ -22,10 +29,13 @@ header{
 header h1{
     padding-top: 50px ;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 5vw;
 }
 
 header > p{
     padding-bottom: 50px;
+
 }
 
 header a, footer a{
@@ -50,8 +60,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 1.4em;
-    font-family: 'Sriracha', cursive;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 
 }
 
@@ -68,8 +78,22 @@ section.image{
 
 section.image p{
     padding: 10px;
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.267);
+    display: inline-block;
 
    
+}
+
+#girassol{
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
+}
+
+#folhas{
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
 }
