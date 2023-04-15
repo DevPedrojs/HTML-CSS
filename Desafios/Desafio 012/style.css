@@ -74,12 +74,16 @@ section.normal{
 section.image{
     background-color: rgb(43, 43, 43);
     color: white;
+    box-shadow: inset rgba(0, 0, 0, 0.397) 6px 6px 13px 0px;
+    
+    
 }
 
 section.image p{
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.267);
     display: inline-block;
+    text-shadow: 1px 1px 0px black;
 
    
 }
@@ -87,7 +91,7 @@ section.image p{
 #girassol{
     background-image: url(imagens/background001.jpg);
     background-attachment: fixed;
-    background-position: center right;
+    background-position: right center;
     background-size: cover;
 }
 
