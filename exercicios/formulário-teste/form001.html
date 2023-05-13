@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de preço</h1>
+    <form action="preço.php" method="post" autocomplete="on" oninput="icost.innerHTML = Number(iprice.value) * Number(iquant.value)">
+        <p>
+            <label for="iprod">Produto: </label>
+            <input type="text" required name="produto" id="iprod" list="produtos">
+            <datalist id="produtos">
+                <option>Faca de Cozinha</option>
+                <option>Tabua de Cortar Carne</option>
+                <option>Kit de Talher</option>
+            </datalist>
+        </p>
+
+        <p> 
+            <label for="iprice">Preço: R$</label>
+            <input type="number" name="price" id="iprice">
+        </p>
+       
+            <label for="iquant">Quantidade:</label>
+            <input type="number" name="quant" id="iquant" required min="0" max="100" step="1" >
+         </p>
+        
+        
+        <p>
+            <label for="icost">Total: R$</label>
+            <output id="icost">0</output>
+        </p>
+       
+
+
+    </form>
+    
+</body>
+</html>
